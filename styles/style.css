@@ -1,0 +1,213 @@
+/* Font Family & Red Hat Display  */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+
+     /* Primary */
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    
+     /* Neutral */
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+body {
+    background-color: var(--Pale-blue);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 16px;
+}
+
+/* Main Content */
+main {
+    background-color: white;
+    width: 100%;
+    max-width: 350px;
+    max-height: 600px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 31% 15% 16% 8%;
+    border-radius: 20px;
+    margin: 0 1rem;
+}
+
+/* Header */
+main header img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* Article  */
+main article h1 {
+    padding: 2rem 1rem 1rem;
+    font-weight: 850;
+    opacity: 0.8;
+}
+
+main article p {
+    padding: 0 3rem;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+/* Section */
+main section {
+    width: 80%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Very-pale-blue);
+    margin-left: 2.5rem;
+    border-radius: 10px;
+}
+
+main section div:first-of-type {
+    width: 69%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main section div p:first-of-type {
+    font-weight: 800;
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+
+main section div p:last-of-type {
+    font-weight: 700;
+    opacity: 0.45;
+}
+
+main section div:last-of-type a {
+    color: rgb(94, 5, 211);
+    font-weight: 600;
+}
+
+main section div:last-of-type a:hover {
+    text-decoration: none;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+/* Button  */
+main .payment {
+    width: 80%;
+    margin: 1.5rem 2.5rem;
+    height: fit-content;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--Bright-blue);
+    color: white;
+    box-shadow: 0 5px 20px 0 var(--Bright-blue);
+    font-weight: 700;
+    font-size: 0.9em;
+    font-family: inherit;
+}
+
+main .payment:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.cancel {
+    color: gray;
+    width: fit-content;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    font-weight: 800;
+    font-family: inherit;
+    font-size: 0.9em;
+}
+
+.cancel:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.attribution-2 {
+    display: none;
+}
+
+/* Media Query  */
+@media (max-width: 375px) {
+    
+    body {
+        font-size: 14px;
+    }
+
+    main {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        margin: 0.5rem;
+        display: flex;
+        flex-flow: row wrap;
+        border-radius: 0px;
+    }
+
+    main header img {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    main article p {
+        padding: 0 1rem;
+    } 
+
+    main section {
+        width: 90%;
+        margin: 0.7rem;
+        padding: 0.5rem 0;
+
+    }
+    main section div:first-of-type {
+        justify-content: center;
+    }
+
+
+    main section img {
+        width: 40px;
+    }
+
+    main .payment {
+        width: 90%;
+        margin: 0.7rem;
+    }
+
+    main .cancel-div {
+        width: 100%;
+        text-align: center;
+    } 
+
+    .attribution-1 {
+        display: none;
+    }
+
+    .attribution-2 {
+        display: block;
+        margin: 1rem 0;
+    }
+}
