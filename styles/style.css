@@ -149,7 +149,7 @@ main .img-container .desktop-img {
         max-width: 400px;
         min-height: 100vh;
         flex-direction: column;
-        margin: 2.5rem 0rem;
+        /* margin: 2.5rem 0rem; */
     }
 
     main {
