@@ -149,11 +149,11 @@ main .img-container .desktop-img {
         max-width: 400px;
         min-height: 100vh;
         flex-direction: column;
-        /* margin: 2.5rem 0rem; */
+        margin: 2em 0rem;
     }
 
     main {
-        padding: 1rem 0.5rem;
+        /* padding: 1rem 0.5rem; */
         max-width: 375px;
         min-height: fit-content;
         display: flex;
@@ -183,7 +183,6 @@ main .img-container .desktop-img {
     main section article div {
         flex-flow: row wrap;
         padding: 0 50%;
-
     }
 
     main section article div span {
