@@ -1,9 +1,9 @@
 ``` 
 
-My challenge 09 with Frontend Mentor.
+My challenge 10 with Frontend Mentor.
 
-This is a responsive Order summary card.
+This is a responsive Stats Preview.
 
-Created on 15/10/2024
+Created on 19/10/2024
 
 ```
